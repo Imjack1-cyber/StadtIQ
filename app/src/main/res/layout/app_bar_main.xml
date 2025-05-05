@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- tools:context should match the Activity this layout is mainly used in -->
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- Use your app's AppBar theme here -->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        <!-- Use your app's Popup theme here -->
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- This includes the content layout specific to each page -->
+    <!-- The specific layout included will depend on which Activity uses this app_bar_main -->
+    <!-- For MainActivity, it should include content_main.xml -->
+    <!-- For VerlaufActivity, it should include content_verlauf.xml -->
+    <!-- For ImpressumActivity, it should include content_impressum.xml -->
+    <!-- This file itself doesn't know which to include, it's handled in the activity's layout -->
+
+    <!-- Example only: This line should actually be in activity_main.xml, activity_verlauf.xml, etc. -->
+    <!-- <include layout="@layout/content_main" /> -->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

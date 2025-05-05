@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_stadtiq"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_stadtiq_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.stadtiq">
+        <!-- Use your actual application theme -->
+
+        <activity
+            android:name="com.stadtiq.ImpressumActivity"
+            android:exported="false"
+            android:label="@string/title_activity_impressum"
+            android:theme="@style/Theme.stadtiq.NoActionBar" />
+        <!-- Or inherit from your main theme -->
+
+        <activity
+            android:name="com.stadtiq.VerlaufActivity"
+            android:exported="false"
+            android:label="@string/title_activity_verlauf"
+            android:theme="@style/Theme.stadtiq.NoActionBar" />
+        <!-- Or inherit from your main theme -->
+
+        <activity
+            android:name="com.stadtiq.ValueDetailActivity"
+            android:exported="false"
+            android:label="@string/detail_title_format"
+            android:theme="@style/Theme.stadtiq.NoActionBar" />
+        <!-- Or inherit from your main theme -->
+
+
+        <activity
+            android:name="com.stadtiq.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.stadtiq.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

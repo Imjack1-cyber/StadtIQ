@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- City and District Selection (Side-by-Side) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_city"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <Spinner
+                android:id="@+id/spinner_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:spinnerMode="dropdown"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_district"
+                android:layout_marginStart="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <Spinner
+                android:id="@+id/spinner_district"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:spinnerMode="dropdown"/>
+
+        </LinearLayout>
+
+
+        <!-- Map / List Toggle -->
+        <LinearLayout
+            android:id="@+id/map_list_toggle_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn_toggle_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Map"
+                android:background="@drawable/toggle_button_background"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:textColor="@color/toggle_button_text_color"/>
+
+            <Button
+                android:id="@+id/btn_toggle_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="List"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/toggle_button_background"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:textColor="@color/toggle_button_text_color"/>
+        </LinearLayout>
+
+        <!-- Display Area (Map Placeholder or List) -->
+        <FrameLayout
+            android:id="@+id/display_area_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:background="#EEEEEE">
+
+        <!-- Placeholder for the message -->
+        <TextView
+            android:id="@+id/txt_placeholder_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/placeholder_select_city"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:gravity="center"/>
+
+        <!-- Map Placeholder View -->
+        <View
+            android:id="@+id/map_placeholder_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:visibility="gone"/>
+
+        <!-- Container for List View Content -->
+        <LinearLayout
+            android:id="@+id/list_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- Layout Toggle Button (Top Right) -->
+            <ImageButton
+                android:id="@+id/btn_list_layout_toggle"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end|top"
+                android:layout_margin="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/list_layout_toggle_icon"
+                android:contentDescription="Toggle list layout (1 or 2 columns)" />
+
+            <!-- RecyclerView for the List view -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_values"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <!-- Value Selection Options (Horizontally Scrollable) -->
+    <TextView
+        android:id="@+id/label_select_value_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_select_value"
+        android:layout_marginTop="24dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    <HorizontalScrollView
+        android:id="@+id/value_options_scroll_view_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/value_options_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView style="@style/ValueOptionStyle" android:text="CO₂" />
+            <TextView style="@style/ValueOptionStyle" android:text="PM2,5" />
+            <TextView style="@style/ValueOptionStyle" android:text="O₂" />
+            <TextView style="@style/ValueOptionStyle" android:text="SO₂" />
+            <TextView style="@style/ValueOptionStyle" android:text="CH₄" />
+            <TextView style="@style/ValueOptionStyle" android:text="p" />
+            <TextView style="@style/ValueOptionStyle" android:text="lp" />
+            <TextView style="@style/ValueOptionStyle" android:text="lx" />
+            <TextView style="@style/ValueOptionStyle" android:text="Td" />
+            <TextView style="@style/ValueOptionStyle" android:text="@string/value_absolute_humidity" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>

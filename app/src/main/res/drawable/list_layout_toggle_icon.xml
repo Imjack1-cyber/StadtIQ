@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State when the list view is in 2-column mode (button shows 1-column icon, text white) -->
+    <item android:state_selected="true"
+        android:drawable="@drawable/ic_column_one"
+        android:tint="@android:color/white"/> <!-- Apply white tint -->
+    <!-- State when the list view is in 1-column mode (button shows 2-column icon, text black) -->
+    <item
+        android:drawable="@drawable/ic_column_two"
+        android:tint="@android:color/black"/> <!-- Apply black tint -->
+</selector>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/speach_bubble_wrap"
+    android:padding="16dp">
+
+    <!-- Text View for Explanation -->
+<TextView
+android:id="@+id/text_explanation"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textAppearance="@style/TextAppearance.AppCompat.Small"
+android:textColor="@android:color/black"
+tools:text="This is a brief explanation about the value."/>
+
+    <!-- Text View for Learn More Link -->
+<TextView
+android:id="@+id/text_learn_more"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="end"
+android:layout_marginTop="8dp"
+android:text="@string/learn_more"
+android:textAppearance="@style/TextAppearance.AppCompat.Small"
+android:textColor="@android:color/holo_blue_light"
+android:clickable="true"
+android:focusable="true" />
+
+    </LinearLayout>

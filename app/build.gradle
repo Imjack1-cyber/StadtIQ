@@ -1,0 +1,49 @@
+plugins {
+    id 'com.android.application'
+    // ... other plugins like 'org.jetbrains.kotlin.android' if using Kotlin
+}
+
+android {
+    // ... other android config
+    compileSdk 35 // Or your target SDK version
+
+    defaultConfig {
+        applicationId "com.stadtiq" // <<< CHANGE THIS >>>
+        minSdk 24 // Or your minimum SDK version
+        targetSdk 35 // Or your target SDK version
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    namespace 'com.stadtiq' // <<< CHANGE THIS >>>
+}
+
+dependencies {
+    // Core AndroidX and UI Libraries
+    implementation libs.appcompat // Or the latest stable version
+    implementation libs.material // Or the latest stable version
+    implementation libs.constraintlayout // Or your preferred layout constraint version
+    implementation libs.recyclerview // Or the latest stable version
+
+    // Required for SharedPreferences handling in a clean way
+    implementation libs.preference // Or the latest stable version
+
+    // Standard Testing Libraries (usually included by default)
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    // Add more dependencies as needed for future features (e.g., map library, charting library)
+}

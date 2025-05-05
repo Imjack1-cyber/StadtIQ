@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State when the button is pressed (optional, for visual feedback) -->
+    <!-- Kept primaryVariant for pressed state, you could change this to a darker grey -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorPrimaryVariant"/>
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+
+    <!-- State when the button is selected -->
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <!-- Solid fill with the new grey color when selected -->
+            <solid android:color="@color/grey_solid"/>
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+
+    <!-- Default state (not selected) -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- White background and black border when unselected -->
+            <solid android:color="@android:color/white"/>
+            <corners android:radius="4dp"/>
+            <stroke android:width="1dp" android:color="@android:color/black"/> <!-- Border color is black -->
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">StadtIQ</string>
+
+    <!-- Navigation Drawer Menu Titles -->
+    <string name="menu_home">Startseite</string>
+    <string name="menu_verlauf">Verlaufsübersicht</string>
+    <string name="menu_impressum">Impressum</string>
+    <string name="menu_language">Sprache</string>
+
+    <!-- Toolbar Titles -->
+    <string name="title_activity_verlauf">Verlaufsübersicht</string>
+    <string name="title_activity_impressum">Impressum</string>
+
+    <!-- Accessibility strings for DrawerLayout -->
+    <string name="navigation_drawer_open">Navigationsmenü öffnen</string>
+    <string name="navigation_drawer_close">Navigationsmenü schließen</string>
+
+    <!-- Content UI Strings (Home Page) -->
+    <string name="label_city">Stadt:</string>
+    <string name="label_district">Bezirk:</string>
+    <string name="hint_select_city">Bitte wählen Sie eine verfügbare Stadt</string>
+    <string name="hint_select_district">Bitte wählen Sie einen verfügbaren Bezirk</string>
+    <string name="button_map">Karte</string>
+    <string name="button_list">Liste</string>
+    <string name="placeholder_select_city">Bitte wählen Sie oben eine Stadt aus.</string>
+    <string name="label_select_value">Wert auswählen:</string>
+    <string name="value_absolute_humidity">Absolute Luftfeuchtigkeit</string>
+
+    <!-- Content UI Strings (Verlauf Page) -->
+    <string name="label_time_period">Zeitraum:</string>
+    <string name="time_option_months">Monate</string>
+    <string name="time_option_all">Alles</string>
+    <string name="placeholder_select_time_value">Bitte wählen Sie oben einen Zeitraum und einen Wert aus.</string>
+    <string name="placeholder_select_city_verlauf">Bitte wählen Sie oben eine Stadt aus, um Verlaufsdaten anzuzeigen.</string>
+
+
+    <!-- Pop-up Strings -->
+    <string name="info_title_format">%s Info</string>
+    <string name="learn_more">Mehr erfahren...</string>
+    <string name="dialog_close">Schließen</string>
+    <string name="impressum_placeholder_content_description">Platzhalterbild für den Inhalt der Impressumsseite</string>
+    <string name="impressum_description">Projektname: StadtIQ\n\nEntwickelt als Demonstrationsanwendung für die Visualisierung von Umweltdaten in städtischen Stadtteilen.\n\nHaftungsausschluss:\nDiese Anwendung dient ausschließlich zu Informationszwecken. Die dargestellten Daten basieren auf Platzhalterwerten und Simulationen. Für reale Sensordaten, Berechnungen und Visualisierungen wären eine tatsächliche Sensorinfrastruktur, Datenpipelines und ausgefeilte Analysetechniken erforderlich. Die Richtigkeit und Vollständigkeit der bereitgestellten Informationen kann nicht garantiert werden.Die Nutzung dieser App erfolgt auf eigene Gefahr.\n\nRechtliche Hinweise:\n[Ersetzen Sie diese Angaben durch die tatsächlichen rechtlichen Hinweise, falls diese App veröffentlicht werden sollte]\n\nKontakt:\nStadtIQ\n[Ihre Kontaktdaten – help@stadtiq.com, stadtiq.com, 0531543683290]\n\n\n© 2025 StadtIQ. Alle Rechte vorbehalten.</string>
+
+    <!-- Value Detail Strings / Popup Explanations -->
+    <string name="detail_title_format">%s Detailinformationen</string>
+    <!-- Short explanations for the popup -->
+    <string name="explanation_co2_short">CO₂ ist ein wichtiges Treibhausgas aus fossilen Brennstoffen, das den Klimawandel beeinflusst.</string>
+    <string name="explanation_pm25_short">PM2,5 sind feine Partikel, die schädlich für Atemwege und Herzgesundheit sind.</string>
+    <string name="explanation_o2_short">O₂ ist lebensnotwendig, sein Level ist im Allgemeinen stabil.</string>
+    <string name="explanation_so2_short">SO₂ ist ein toxisches Gas aus der Verbrennung fossiler Brennstoffe, das zu saurem Regen beiträgt.</string>
+    <string name="explanation_ch4_short">CH₄ ist Methan, ein starkes Treibhausgas aus Landwirtschaft und Lecks.</string>
+    <string name="explanation_p_short">Druck (p) ist Atmosphärendruck, wichtig für die Wettervorhersage.</string>
+    <string name="explanation_lp_short">Lp ist der Schallpegel in dB, der zur Beurteilung von Lärmbelästigung verwendet wird.</string>
+    <string name="explanation_lx_short">Lx ist die Beleuchtungsstärke (Licht auf einer Oberfläche), relevant für die Sichtbarkeit.</string>
+    <string name="explanation_td_short">Td ist der Taupunkt, der den Feuchtigkeitsgehalt in der Luft anzeigt.</string>
+    <string name="explanation_absolute_humidity_short">Absolute Luftfeuchtigkeit ist die Masse des Wasserdampfs pro Luftvolumen.</string>
+
+    <!-- Long explanations for the Detail Page -->
+    <string name="explanation_co2_long">Kohlendioxid (CO₂) ist ein farbloses, geruchloses Gas, das durch Photosynthese für das Leben auf der Erde unerlässlich ist. Menschliche Aktivitäten wie die Verbrennung fossiler Brennstoffe haben jedoch seine atmosphärische Konzentration erheblich erhöht, was es zum Haupttreiber der globalen Erwärmung und des Klimawandels macht. Es schließt Wärme in der Atmosphäre durch den Treibhauseffekt ein. Die Überwachung der CO₂-Werte ist entscheidend für das Verständnis der Luftqualität und der Klimatrends.\n\nQuellen für CO₂ sind die Verbrennung fossiler Brennstoffe (Kohle, Öl, Erdgas), industrielle Prozesse, Abholzung und natürliche Quellen wie Vulkanausbrüche und Atmung. Die atmosphärischen CO₂-Werte steigen seit der Industriellen Revolution stetig an, was zu Bedenken hinsichtlich ihrer Auswirkungen auf globale Temperaturen und Ökosysteme führt.</string>
+    <string name="explanation_pm25_long">Feinstaub 2,5 (PM2,5) bezieht sich auf feine inhalierbare Partikel mit Durchmessern, die im Allgemeinen 2,5 Mikrometer und kleiner sind. Diese Partikel können direkt aus Quellen wie Waldbränden emittiert werden oder sich bilden, wenn Gase von Kraftwerken, Industrie und Automobilen in der Luft reagieren. PM2,5 kann tief in die Lunge und sogar in den Blutkreislauf eindringen und zu Atemwegsproblemen, Herzkrankheiten und anderen Gesundheitsproblemen beitragen.\n\nHäufige Quellen für PM2,5 sind Emissionen von Fahrzeugen (insbesondere Diesel), Industrieanlagen, Kraftwerken, der Verbrennung von Holz oder anderer Biomasse sowie Bauaktivitäten. Aufgrund ihrer geringen Größe können PM2,5-Partikel lange in der Luft schweben und weite Strecken zurücklegen, was die Luftqualität weit entfernt von ihrer Quelle beeinträchtigt.</string>
+    <string name="explanation_o2_long">Sauerstoff (O₂) ist ein farbloses, geruchloses Gas, das etwa 21 % der Erdatmosphäre ausmacht. Es ist für die Atmung der meisten lebenden Organismen unerlässlich. Während es für das Leben lebensnotwendig ist, können hohe Konzentrationen gefährlich sein (z. B. Erhöhung der Entflammbarkeit). Im Rahmen der Luftqualitätsüberwachung sind die O₂-Werte normalerweise stabil, können aber durch industrielle Prozesse oder Ereignisse, die große Mengen Sauerstoff verbrauchen, beeinflusst werden.\n\nSauerstoff wird hauptsächlich durch Photosynthese von Pflanzen und Algen produziert. Seine atmosphärische Konzentration ist relativ konstant, aber lokale Verarmung kann in geschlossenen Räumen oder in der Nähe bestimmter industrieller Prozesse auftreten. Die Überwachung von O₂ ist für die Luftqualität im Freien weniger üblich als die von Schadstoffen, sie ist jedoch in geschlossenen Umgebungen oder spezifischen industriellen Sicherheitskontexten von entscheidender Bedeutung.</string>
+    <string name="explanation_so2_long">Schwefeldioxid (SO₂) ist ein toxisches Gas mit stechendem Geruch, das hauptsächlich bei der Verbrennung schwefelhaltiger fossiler Brennstoffe (insbesondere Kohle) entsteht. Es ist ein wichtiger Luftschadstoff, der zu saurem Regen und Atemwegsproblemen beiträgt und Vegetation und Gebäude schädigen kann. SO₂ kann in der Atmosphäre zu Schwefelsäure und feinem Feinstaub reagieren.\n\nDie Hauptquellen für SO₂ sind Kraftwerke und Industrieanlagen, die schwefelhaltige Brennstoffe verbrennen. Vulkanausbrüche sind ebenfalls eine natürliche Quelle. Kontrollmaßnahmen in entwickelten Ländern haben die SO₂-Emissionen erheblich reduziert, aber in Gebieten mit weniger strengen Vorschriften bleibt es ein Problem.</string>
+    <string name="explanation_ch4_long">Methan (CH₄) ist der Hauptbestandteil von Erdgas und ein starkes Treibhausgas mit einem viel höheren Treibhauspotenzial als CO₂ über einen kürzeren Zeitraum. Quellen sind natürliche Prozesse wie Feuchtgebiete sowie menschliche Aktivitäten wie Viehzucht, Reisanbau und Lecks aus Erdgasleitungen. Die Überwachung von CH₄ ist wichtig für den Klimaschutz.\n\nAnthropogene Methanquellen sind Landwirtschaft (enterische Fermentation bei Nutztieren, Güllemanagement, Reisanbau), Produktion und Verteilung fossiler Brennstoffe (Lecks aus Öl- und Gassystemen, Kohlebergbau), Deponien und Abwasserbehandlung. Die Reduzierung der Methanemissionen wird als Schlüsselstrategie zur kurzfristigen Eindämmung des Klimawandels angesehen.</string>
+    <string name="explanation_p_long">Atmosphärendruck (p), auch barometrischer Druck genannt, ist der Druck, den das Gewicht der Luft an einem bestimmten Punkt auf der Erdoberfläche ausübt. Er wird in Einheiten wie Hektopascal (hPa) oder Millibar (mb) gemessen. Der Atmosphärendruck variiert mit der Höhe und den Wetterbedingungen und ist ein wichtiger Faktor für die Wettervorhersage.\n\nÄnderungen des Atmosphärendrucks sind mit Wettersystemen verbunden; niedriger Druck weist im Allgemeinen auf stürmisches Wetter hin, während hoher Druck mit klarem Himmel assoziiert ist. Die Überwachung des Atmosphärendrucks ist grundlegend für die Meteorologie und Luftfahrt.</string>
+    <string name="explanation_lp_long">Schallpegel (Lp) ist ein logarithmisches Maß für den effektiven Druck eines Schalls relativ zu einem Referenzwert. Er wird üblicherweise in Dezibel (dB) ausgedrückt. Lp wird verwendet, um die Intensität des Schalls zu quantifizieren, relevant für die Bewertung der Lärmbelästigung und ihrer potenziellen gesundheitlichen Auswirkungen. Höhere Lp-Werte weisen auf lautere Geräusche hin.\n\nLärmbelästigung durch Quellen wie Verkehr, Bauwesen, Industrieaktivitäten und Flugzeuge kann negative Auswirkungen auf die menschliche Gesundheit haben, darunter Stress, Schlafstörungen und Herz-Kreislauf-Erkrankungen. Die Messung von Lp hilft bei der Bewertung der Lärmbelastungen und bei der Entwicklung von Strategien zur Lärmreduzierung.</string>
+    <string name="explanation_lx_long">Beleuchtungsstärke (lx) ist ein Maß dafür, wie viel Lichtstrom (Licht) über eine bestimmte Fläche verteilt ist. Sie beschreibt die Lichtmenge, die auf eine Oberfläche fällt. Gemessen in Lux, ist sie relevant für die Beurteilung der Beleuchtungsbedingungen in städtischen Gebieten unter Berücksichtigung von Faktoren wie der Effizienz der Straßenbeleuchtung und der Lichtverschmutzung.\n\nEine angemessene Beleuchtungsstärke ist wichtig für Sicherheit und Sichtbarkeit. Übermäßige künstliche Beleuchtung kann zu Lichtverschmutzung führen, die astronomische Beobachtungen beeinträchtigt, Ökosysteme stört und Energie verschwendet.</string>
+    <string name="explanation_td_long">Der Taupunkt (Td) ist die Temperatur, auf die Luft bei konstantem Druck abgekühlt werden muss, damit Wasserdampf zu flüssigem Wasser (Tau) kondensiert. Er ist ein Maß für die atmosphärische Feuchtigkeit. Ein höherer Taupunkt bedeutet mehr Feuchtigkeit in der Luft. Er wird oft in der Meteorologie zur Vorhersage von Tau, Nebel oder Reif verwendet.\n\nDer Taupunkt ist ein direkterer Indikator für den tatsächlichen Feuchtigkeitsgehalt in der Luft als die relative Luftfeuchtigkeit, die von der Temperatur abhängt. Er ist ein kritischer Parameter bei der Wettervorhersage und kann das Gefühl der thermischen Behaglichkeit beeinflussen.</string>
+    <string name="explanation_absolute_humidity_long">Absolute Luftfeuchtigkeit ist die Masse des Wasserdampfs pro Volumeneinheit trockener Luft, oft ausgedrückt in Gramm pro Kubikmeter (g/m³). Es ist ein direktes Maß für die Menge an Wasserdampf in der Luft, im Gegensatz zur relativen Luftfeuchtigkeit, die von der Temperatur abhängt. Die absolute Luftfeuchtigkeit ist relevant für das Verständnis des atmosphärischen Feuchtigkeitsgehalts und seiner Auswirkungen auf Wetter und Komfort.\n\nDie absolute Luftfeuchtigkeit wird in verschiedenen wissenschaftlichen und technischen Anwendungen verwendet, darunter Meteorologie, Klimatisierungssysteme und industrielle Prozesse, bei denen der Feuchtigkeitsgehalt kontrolliert werden muss. Sie spiegelt direkt die Dichte des Wasserdampfs in der Luft wider.</string>
+
+    <string name="detail_content_not_available">Detaillierte Informationen zu %s sind noch nicht verfügbar.</string>
+
+    <!-- Language Selection Strings -->
+    <string name="dialog_select_language_title">Sprache auswählen</string>
+    <string name="language_english">Englisch</string>
+    <string name="language_german">Deutsch</string>
+
+</resources>

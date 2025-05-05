@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".VerlaufActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- City and District Selection (Side-by-Side) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_city"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <Spinner
+                android:id="@+id/spinner_city_verlauf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:spinnerMode="dropdown"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_district"
+                android:layout_marginStart="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <Spinner
+                android:id="@+id/spinner_district_verlauf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+
+        <!-- Time Period Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_time_period"
+            android:layout_marginTop="24dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <HorizontalScrollView
+            android:id="@+id/time_options_scroll_view_verlauf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/time_options_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView style="@style/ValueOptionStyle" android:text="3" />
+            <TextView style="@style/ValueOptionStyle" android:text="6" />
+            <TextView style="@style/ValueOptionStyle" android:text="9" />
+            <TextView style="@style/ValueOptionStyle" android:text="12" />
+            <TextView style="@style/ValueOptionStyle" android:text="15" />
+            <TextView style="@style/ValueOptionStyle" android:text="18" />
+            <TextView style="@style/ValueOptionStyle" android:text="21" />
+            <TextView style="@style/ValueOptionStyle" android:text="24" />
+            <TextView style="@style/ValueOptionStyle" android:text="@string/time_option_all" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <!-- Graph Placeholder -->
+    <FrameLayout
+        android:id="@+id/graph_placeholder_container"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        android:background="#EEEEEE">
+
+        <TextView
+            android:id="@+id/txt_graph_placeholder_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/placeholder_select_city_verlauf"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:gravity="center"/>
+
+        <View
+            android:id="@+id/graph_white_placeholder_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+    <!-- Value Selection Options (Horizontally Scrollable) -->
+    <TextView
+        android:id="@+id/label_select_value_verlauf"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/label_select_value"
+    android:layout_marginTop="24dp"
+    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    <HorizontalScrollView
+        android:id="@+id/value_options_scroll_view_verlauf"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/value_options_container_verlauf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView style="@style/ValueOptionStyle" android:text="CO₂" />
+        <TextView style="@style/ValueOptionStyle" android:text="PM2,5" />
+        <TextView style="@style/ValueOptionStyle" android:text="O₂" />
+        <TextView style="@style/ValueOptionStyle" android:text="SO₂" />
+        <TextView style="@style/ValueOptionStyle" android:text="CH₄" />
+        <TextView style="@style/ValueOptionStyle" android:text="p" />
+        <TextView style="@style/ValueOptionStyle" android:text="lp" />
+        <TextView style="@style/ValueOptionStyle" android:text="lx" />
+        <TextView style="@style/ValueOptionStyle" android:text="Td" />
+        <TextView style="@style/ValueOptionStyle" android:text="@string/value_absolute_humidity" />
+
+    </LinearLayout>
+</HorizontalScrollView>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>

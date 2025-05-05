@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">StadtIQ</string>
+
+    <!-- Navigation Drawer Menu Titles -->
+    <string name="menu_home">Home</string>
+    <string name="menu_verlauf">History Overview</string>
+    <string name="menu_impressum">Imprint</string>
+    <string name="menu_language">Language</string>
+
+    <!-- Toolbar Titles -->
+    <string name="title_activity_verlauf">History Overview</string>
+    <string name="title_activity_impressum">Imprint</string>
+
+
+    <!-- Accessibility strings for DrawerLayout -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Content UI Strings (Home Page) -->
+    <string name="label_city">City:</string>
+    <string name="label_district">District:</string>
+    <string name="hint_select_city">Please select from one of the available cities</string>
+    <string name="hint_select_district">Please select from one of the available districts</string>
+    <string name="button_map">Map</string>
+    <string name="button_list">List</string>
+    <string name="placeholder_select_city">Please select a city above.</string>
+    <string name="label_select_value">Select Value:</string>
+    <string name="value_absolute_humidity">Absolute Humidity</string>
+
+    <!-- Content UI Strings (Verlauf Page) -->
+    <string name="label_time_period">Time Period:</string>
+    <string name="time_option_months">Months</string>
+    <string name="time_option_all">Everything</string>
+    <string name="placeholder_select_time_value">Please select a time period and a value above.</string>
+    <string name="placeholder_select_city_verlauf">Please select a city above to view history data.</string>
+
+
+    <!-- Pop-up Strings -->
+    <string name="info_title_format">%s Info</string>
+    <string name="learn_more">Learn More...</string>
+    <string name="dialog_close">Close</string>
+    <string name="impressum_placeholder_content_description">Placeholder image for Impressum page content</string>
+    <string name="impressum_description">Project Name: StadtIQ\n\nDeveloped as a demonstration application for environmental data visualization in urban areas.\n\nDisclaimer:\nThis application is for informational purposes only. The data presented is based on placeholder values and simulations. Real-world sensor data, calculations, and visualizations would require actual sensor infrastructure, data pipelines, and sophisticated analysis techniques. The accuracy and completeness of the information provided are not guaranteed. Use of this app is at your own risk.\n\nLegal Information:\n[Replace with actual legal information if this app were to be published]\n\nContact:\nStadtIQ\n[Your Contact Information - help@stadtiq.com, stadtiq.com, 0531543683290]\n\n\n© 2025 StadtIQ. All rights reserved.</string>
+
+    <!-- Value Detail Strings / Popup Explanations -->
+    <string name="detail_title_format">%s Detail Information</string>
+    <!-- Short explanations for the popup (kept separate for flexibility, but could be first part of detailed) -->
+    <string name="explanation_co2_short">CO₂ is a key greenhouse gas from fossil fuels, impacting climate change.</string>
+    <string name="explanation_pm25_short">PM2.5 are fine particles harmful to respiratory and heart health.</string>
+    <string name="explanation_o2_short">O₂ is essential for life, its level is generally stable.</string>
+    <string name="explanation_so2_short">SO₂ is a toxic gas from burning fossil fuels, contributing to acid rain.</string>
+    <string name="explanation_ch4_short">CH₄ is methane, a potent greenhouse gas from agriculture and leaks.</string>
+    <string name="explanation_p_short">Pressure (p) is atmospheric weight, key for weather forecasting.</string>
+    <string name="explanation_lp_short">Lp is sound level in dB, used for noise pollution assessment.</string>
+    <string name="explanation_lx_short">Lx is illuminance (light on a surface), relevant for visibility.</string>
+    <string name="explanation_td_short">Td is dew point, indicating moisture content in the air.</string>
+    <string name="explanation_absolute_humidity_short">Absolute humidity is the mass of water vapor per volume of air.</string>
+
+    <!-- Long explanations for the Detail Page -->
+    <string name="explanation_co2_long">Carbon Dioxide (CO₂) is a colorless, odorless gas essential to life on Earth through photosynthesis. However, human activities like burning fossil fuels have significantly increased its atmospheric concentration, making it the primary driver of global warming and climate change. It traps heat in the atmosphere through the greenhouse effect. Monitoring CO₂ levels is crucial for understanding air quality and climate trends.\n\nSources of CO₂ include combustion of fossil fuels (coal, oil, natural gas), industrial processes, deforestation, and natural sources like volcanic eruptions and respiration. Atmospheric CO₂ levels have been steadily rising since the Industrial Revolution, leading to concerns about its impact on global temperatures and ecosystems.</string>
+    <string name="explanation_pm25_long">Particulate Matter 2.5 (PM2.5) refers to fine inhalable particles, with diameters that are generally 2.5 micrometers and smaller. These particles can be emitted directly from sources such as forest fires, or they can form when gases from power plants, industries and automobiles react in the air. PM2.5 can penetrate deep into the lungs and even the bloodstream, contributing to respiratory problems, heart disease, and other health issues.\n\nCommon sources of PM2.5 include emissions from vehicles (especially diesel), industrial facilities, power plants, burning wood or other biomass, and construction activities. Due to their small size, PM2.5 particles can remain suspended in the air for long periods and travel long distances, impacting air quality far from their source.</string>
+    <string name="explanation_o2_long">Oxygen (O₂) is a colorless, odorless gas that constitutes about 21% of the Earth\'s atmosphere. It is essential for the respiration of most living organisms. While vital for life, high concentrations can be dangerous (e.g., increasing flammability). In the context of air quality monitoring, O₂ levels are usually stable but can be affected by industrial processes or events that consume large amounts of oxygen.\n\nOxygen is produced primarily through photosynthesis by plants and algae. Its atmospheric concentration is relatively constant, but local depletion can occur in enclosed spaces or near certain industrial processes. Monitoring O₂ is less common for outdoor air quality than pollutants, but it\'s critical in confined environments or specific industrial safety contexts.</string>
+    <string name="explanation_so2_long">Sulfur Dioxide (SO₂) is a toxic gas with a pungent smell, primarily produced from the burning of fossil fuels (especially coal) that contain sulfur. It is a major air pollutant that contributes to acid rain, respiratory problems, and can damage vegetation and buildings. SO₂ can react in the atmosphere to form sulfuric acid and fine particulate matter.\n\nThe main sources of SO₂ are power plants and industrial facilities that burn sulfur-containing fuels. Volcanic eruptions are also a natural source. Control measures in developed countries have significantly reduced SO₂ emissions, but it remains a concern in areas with less stringent regulations.</string>
+    <string name="explanation_ch4_long">Methane (CH₄) is the main component of natural gas and a powerful greenhouse gas, with a global warming potential much higher than CO₂ over a shorter timeframe. Sources include natural processes like wetlands, as well as human activities like livestock farming, rice cultivation, and leaks from natural gas systems. Monitoring CH₄ is important for addressing climate change.\n\nAnthropogenic sources of methane include agriculture (enteric fermentation in livestock, manure management, rice cultivation), fossil fuel production and distribution (leaks from oil and gas systems, coal mining), landfills, and wastewater treatment. Reducing methane emissions is seen as a key strategy for mitigating climate change in the short term.</string>
+    <string name="explanation_p_long">Atmospheric pressure (p), also known as barometric pressure, is the pressure exerted by the weight of the air above a given point on the Earth\'s surface. It is measured in units like hectopascals (hPa) or millibars (mb). Atmospheric pressure varies with altitude and weather conditions and is a key factor in weather forecasting.\n\nChanges in atmospheric pressure are associated with weather systems; low pressure generally indicates stormy weather, while high pressure is associated with clear skies. Monitoring atmospheric pressure is fundamental to meteorology and aviation.</string>
+    <string name="explanation_lp_long">Sound pressure level (Lp) is a logarithmic measure of the effective pressure of a sound relative to a reference value. It is commonly expressed in decibels (dB). Lp is used to quantify the intensity of sound, relevant for assessing noise pollution and its potential health impacts. Higher Lp values indicate louder sounds.\n\nNoise pollution from sources like traffic, construction, industrial activities, and aircraft can have negative effects on human health, including stress, sleep disturbance, and cardiovascular problems. Measuring Lp helps assess noise exposure levels and inform strategies for noise reduction.</string>
+    <string name="explanation_lx_long">Illuminance (lx) is a measure of how much luminous flux (light) is spread over a given area. It describes the amount of light that falls on a surface. Measured in lux, it is relevant for assessing lighting conditions in urban areas, considering factors like street lighting efficiency and light pollution.\n\nAppropriate illuminance is important for safety and visibility. Excessive artificial lighting can lead to light pollution, which impacts astronomical observation, disrupts ecosystems, and wastes energy.</string>
+    <string name="explanation_td_long">The dew point (Td) is the temperature to which air must be cooled at constant pressure for water vapor to condense into liquid water (dew). It is a measure of atmospheric moisture. A higher dew point indicates more moisture in the air. It is often used in meteorology to forecast dew, fog, or frost.\n\nThe dew point is a more direct indicator of the actual moisture content in the air than relative humidity, which varies with temperature. It is a critical parameter in weather forecasting and can influence thermal comfort levels.</string>
+    <string name="explanation_absolute_humidity_long">Absolute humidity is the mass of water vapor per unit volume of dry air, often expressed in grams per cubic meter (g/m³). It is a direct measure of the amount of water vapor present in the air, unlike relative humidity which depends on temperature. Absolute humidity is relevant for understanding atmospheric moisture content and its effects on weather and comfort.\n\nAbsolute humidity is used in various scientific and engineering applications, including meteorology, HVAC systems, and industrial processes where moisture content needs to be controlled. It directly reflects the density of water vapor in the air.</string>
+
+    <string name="detail_content_not_available">Detailed information for %s is not available yet.</string>
+
+    <!-- Language Selection Strings -->
+    <string name="dialog_select_language_title">Select Language</string>
+    <string name="language_english">English</string>
+    <string name="language_german">German</string>
+
+</resources>
