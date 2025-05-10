@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Palette (Dark Theme) -->
+    <color name="colorPrimary">#66BB6A</color>       <!-- Lighter, less saturated Green -->
+    <color name="colorPrimaryVariant">#388E3C</color>  <!-- Can be same as light, or a bit deeper if primary is very light -->
+    <color name="colorOnPrimary">#000000</color>     <!-- Black text on the lighter primary green -->
+
+    <!-- Secondary Palette (Dark Theme) -->
+    <color name="colorSecondary">#80CBC4</color>      <!-- Lighter Teal -->
+    <color name="colorSecondaryVariant">#4DB6AC</color> <!-- A bit more saturated/darker than secondary -->
+    <color name="colorOnSecondary">#000000</color>    <!-- Black text on lighter secondary -->
+
+    <!-- Standard UI Colors (Dark Theme) -->
+    <color name="colorBackground">#121212</color>        <!-- Very dark grey/near black -->
+    <color name="colorSurface">#1E1E1E</color>          <!-- Dark grey for cards, dialogs -->
+    <color name="colorError">#CF6679</color>            <!-- Material standard dark error -->
+
+    <!-- Text & Icon Colors ON the above UI Colors (Dark Theme) -->
+    <color name="colorOnBackground">#E0E0E0</color>     <!-- Light grey/off-white text on main background -->
+    <color name="colorOnSurface">#FFFFFF</color>        <!-- White text on surfaces -->
+    <color name="colorOnError">#000000</color>          <!-- Black text on error color -->
+
+    <!-- Default Text Colors (Dark Theme) -->
+    <color name="textColorPrimary">#FFFFFFFF</color>      <!-- White for primary text -->
+    <color name="textColorSecondary">#B3FFFFFF</color>    <!-- 70% White for secondary text -->
+    <color name="textColorHint">#80FFFFFF</color>         <!-- 50% White for hint text -->
+
+    <!-- Graph Colors (Dark Theme - generally lighter/brighter than light theme counterparts for visibility) -->
+    <color name="graph_axis">#AEAEAE</color>          <!-- Lighter Grey for axes -->
+    <color name="graph_grid">#424242</color>          <!-- Darker Grey for grid lines (subtle) -->
+    <color name="graph_text">#AEAEAE</color>          <!-- Lighter Grey for graph text/labels -->
+
+    <color name="graph_co2">#FF8A65</color>           <!-- Lighter Deep Orange -->
+    <color name="graph_pm25">#A1887F</color>          <!-- Lighter Brown -->
+    <color name="graph_o2">#4DD0E1</color>            <!-- Lighter Cyan -->
+    <color name="graph_so2">#FFF59D</color>           <!-- Lighter Yellow -->
+    <color name="graph_ch4">#81C784</color>           <!-- Lighter Green -->
+    <color name="graph_p">#BA68C8</color>             <!-- Lighter Purple -->
+    <color name="graph_lp">#F48FB1</color>            <!-- Lighter Pink -->
+    <color name="graph_lx">#FFD54F</color>            <!-- Lighter Amber -->
+    <color name="graph_td">#4FC3F7</color>             <!-- Lighter Light Blue -->
+    <color name="graph_abs_humidity">#9575CD</color>     <!-- Lighter Deep Purple -->
+
+    <!-- Navigation Header Gradient (Dark Theme) -->
+    <color name="nav_header_gradient_start">#2E7D32</color>
+    <color name="nav_header_gradient_center">#1B5E20</color>
+    <color name="nav_header_gradient_end">#1B5E20</color>
+
+    <!-- List Item Background (Dark Theme) -->
+    <color name="list_item_bg_default">@color/colorSurface</color>
+    <color name="list_item_bg_pressed">#333333</color> <!-- Slightly lighter than surface -->
+
+    <!-- Toggle Button Text Colors (Dark Theme) -->
+    <color name="toggle_button_text_selected">@color/colorOnPrimary</color>
+    <color name="toggle_button_text_unselected">@color/textColorPrimary</color>
+
+    <color name="colorOutline">#565656</color>
+
+    <!-- Toggle Button Background Colors (Dark Theme) -->
+    <color name="toggle_button_bg_selected">@color/colorPrimary</color>
+    <color name="toggle_button_bg_unselected">@color/colorSurface</color>
+    <color name="toggle_button_stroke">#616161</color>
+
+    <!-- For VerlaufActivity ValueOptionStyle Text (Dark Theme) -->
+    <color name="default_text_color_selector_verlauf">@color/textColorPrimary</color>
+    <color name="selected_text_color_selector_verlauf">@color/colorPrimary</color> <!-- Text on selected (custom) bg -->
+    <color name="grey_solid_selected_option">#424242</color> <!-- Background for selected time/value options -->
+
+    <!-- Other Specific UI Colors (Dark Theme) -->
+    <color name="grey_container">@color/colorSurface</color> <!-- For consistency if still used -->
+</resources>

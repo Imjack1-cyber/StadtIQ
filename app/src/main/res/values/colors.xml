@@ -1,29 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Standard Android/Material colors -->
+    <!-- Standard Base Colors -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- Your App's Green Theme Colors -->
-    <color name="colorPrimary">#4CAF50</color>       <!-- Primary green from logo -->
-    <color name="colorPrimaryVariant">#388E3C</color>  <!-- Darker green -->
-    <color name="colorOnPrimary">#FFFFFF</color>     <!-- White text on primary -->
+    <!-- Primary Palette (Light Theme) -->
+    <color name="colorPrimary">#4CAF50</color>        <!-- Main Green -->
+    <color name="colorPrimaryVariant">#388E3C</color>   <!-- Darker Green for status bar, etc. -->
+    <color name="colorOnPrimary">#FFFFFF</color>      <!-- Text/icons on primary (e.g., Toolbar title) -->
 
-    <!-- Secondary colors (REQUIRED by some themes - ensure these are NOT commented out) -->
-    <color name="colorSecondary">#03DAC6</color>      <!-- Standard Material Teal -->
-    <color name="colorSecondaryVariant">#018786</color> <!-- Darker Teal -->
-    <color name="colorOnSecondary">#000000</color>    <!-- Black text on secondary -->
+    <!-- Secondary Palette (Light Theme) - Used for accents, FABs etc. -->
+    <color name="colorSecondary">#03DAC6</color>       <!-- Material Teal -->
+    <color name="colorSecondaryVariant">#018786</color>  <!-- Darker Teal -->
+    <color name="colorOnSecondary">#000000</color>     <!-- Text/icons on secondary -->
 
-    <!-- Other colors like the grey for selected items or container backgrounds -->
-    <color name="grey_light">#D3D3D3</color>
-    <color name="grey_medium">#B0B0B0</color>
-    <color name="grey_container">#EEEEEE</color>
+    <!-- Standard UI Colors (Light Theme) -->
+    <color name="colorBackground">#FAFAFA</color>        <!-- Main background of activities/screens -->
+    <color name="colorSurface">#FFFFFF</color>          <!-- Background of cards, dialogs, sheets -->
+    <color name="colorError">#B00020</color>            <!-- Error text, error indicators -->
 
-    <!-- Specific grey for the selected toggle button background -->
-    <color name="grey_solid">#A9A9A9</color>
+    <!-- Text & Icon Colors ON the above UI Colors (Light Theme) -->
+    <color name="colorOnBackground">#000000</color>     <!-- Text on main background -->
+    <color name="colorOnSurface">#000000</color>        <!-- Text on surfaces -->
+    <color name="colorOnError">#FFFFFF</color>          <!-- Text on error color -->
 
+    <!-- Default Text Colors (Light Theme) -->
+    <color name="textColorPrimary">#DE000000</color>      <!-- 87% Black for primary text -->
+    <color name="textColorSecondary">#8A000000</color>    <!-- 54% Black for secondary text -->
+    <color name="textColorHint">#8A000000</color>         <!-- 54% Black for hint text -->
 
-    <!-- Redefining the standard Material Design default color for backward compatibility -->
+    <!-- Graph Colors (Light Theme) -->
+    <color name="graph_axis">#333333</color>          <!-- Dark Grey for axes -->
+    <color name="graph_grid">#CCCCCC</color>          <!-- Medium Grey for grid lines -->
+    <color name="graph_text">#333333</color>          <!-- Dark Grey for graph text/labels -->
+
+    <color name="graph_co2">#FF5722</color>           <!-- Deep Orange -->
+    <color name="graph_pm25">#795548</color>          <!-- Brown -->
+    <color name="graph_o2">#00BCD4</color>            <!-- Cyan -->
+    <color name="graph_so2">#FFEB3B</color>           <!-- Yellow -->
+    <color name="graph_ch4">#4CAF50</color>           <!-- Green (can be same as primary) -->
+    <color name="graph_p">#9C27B0</color>             <!-- Purple -->
+    <color name="graph_lp">#E91E63</color>            <!-- Pink -->
+    <color name="graph_lx">#FFC107</color>            <!-- Amber -->
+    <color name="graph_td">#03A9F4</color>             <!-- Light Blue -->
+    <color name="graph_abs_humidity">#673AB7</color>     <!-- Deep Purple -->
+
+    <!-- Navigation Header Gradient (Light Theme) -->
+    <color name="nav_header_gradient_start">#81C784</color>
+    <color name="nav_header_gradient_center">#4CAF50</color>
+    <color name="nav_header_gradient_end">#2E7D32</color>
+
+    <!-- List Item Background (Light Theme) -->
+    <color name="list_item_bg_default">@color/colorSurface</color>
+    <color name="list_item_bg_pressed">#E0E0E0</color> <!-- Slightly darker than surface -->
+
+    <!-- Toggle Button Text Colors (Light Theme) -->
+    <color name="toggle_button_text_selected">@color/colorOnPrimary</color> <!-- Text on selected (colorPrimary) bg -->
+    <color name="toggle_button_text_unselected">@color/textColorPrimary</color> <!-- Default text color -->
+
+    <color name="colorOutline">#C2C2C2</color>
+
+    <!-- Toggle Button Background Colors (Light Theme) -->
+    <color name="toggle_button_bg_selected">@color/colorPrimary</color>
+    <color name="toggle_button_bg_unselected">#E0E0E0</color> <!-- Light grey -->
+    <color name="toggle_button_stroke">#BDBDBD</color>      <!-- Border for unselected -->
+
+    <!-- For VerlaufActivity ValueOptionStyle Text (Light Theme) -->
+    <color name="default_text_color_selector_verlauf">@color/textColorPrimary</color>
+    <color name="selected_text_color_selector_verlauf">@color/colorOnPrimary</color> <!-- If selected bg is primary -->
+    <color name="grey_solid_selected_option">#A9A9A9</color> <!-- Background for selected time/value options -->
+
+    <!-- Other Specific UI Colors (Light Theme) -->
+    <color name="grey_container">#EEEEEE</color> <!-- Used for FrameLayout bg in content_main before -->
+    <color name="green_dots">#4CAF50</color> <!-- Example for map dots -->
+
+    <!-- This is not strictly needed if your theme setup is correct, but doesn't hurt -->
     <color name="design_default_color_primary">@color/colorPrimary</color>
-
 </resources>

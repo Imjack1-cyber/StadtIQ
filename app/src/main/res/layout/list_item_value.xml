@@ -18,7 +18,7 @@
         android:layout_weight="1"
         tools:text="CO2"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@android:color/black"/>
+        android:textColor="?android:attr/textColorPrimary"/>
 
     <TextView
         android:id="@+id/text_value_reading"
@@ -26,6 +26,6 @@
         android:layout_height="wrap_content"
         tools:text="415 ppm"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@android:color/black"/>
+        android:textColor="?android:attr/textColorSecondary"/>
 
 </LinearLayout>

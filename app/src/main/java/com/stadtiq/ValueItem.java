@@ -1,12 +1,17 @@
-package com.stadtiq; // <<< CHANGE THIS >>>
+package com.stadtiq;
 
 public class ValueItem {
-    String name;
+    String displayableName; // Localized name for UI
     String reading;
+    String dataKey;         // Non-localized, constant key for data and logic
 
-    public ValueItem(String name, String reading) {
-        this.name = name;
+    public ValueItem(String displayableName, String reading, String dataKey) {
+        this.displayableName = displayableName;
         this.reading = reading;
+        this.dataKey = dataKey;
     }
 
+    public String getDisplayableName() { return displayableName; }
+    public String getReading() { return reading; }
+    public String getDataKey() { return dataKey; }
 }

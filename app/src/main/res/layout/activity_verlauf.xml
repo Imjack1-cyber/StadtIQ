@@ -28,12 +28,10 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
-        <!-- Include the content layout specific to VerlaufActivity -->
         <include layout="@layout/content_verlauf" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-    <!-- The Navigation View (sliding menu) -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view_verlauf"
         android:layout_width="wrap_content"

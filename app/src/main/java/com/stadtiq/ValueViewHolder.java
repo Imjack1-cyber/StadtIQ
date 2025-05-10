@@ -1,4 +1,4 @@
-package com.stadtiq; // <<< CHANGE THIS >>>
+package com.stadtiq;
 
 import android.view.View;
 import android.widget.TextView;
@@ -12,7 +12,7 @@ public class ValueViewHolder extends RecyclerView.ViewHolder {
     TextView valueReading;
 
     public interface OnItemClickListener {
-        void onItemClick(int position);
+        void onItemClick(View itemView, int position); // Modified to pass itemView
     }
 
     public ValueViewHolder(@NonNull View itemView, final OnItemClickListener listener) {
@@ -20,14 +20,11 @@ public class ValueViewHolder extends RecyclerView.ViewHolder {
         valueName = itemView.findViewById(R.id.text_value_name);
         valueReading = itemView.findViewById(R.id.text_value_reading);
 
-        itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (listener != null) {
-                    int position = getAdapterPosition();
-                    if (position != RecyclerView.NO_POSITION) {
-                        listener.onItemClick(position);
-                    }
+        itemView.setOnClickListener(v -> {
+            if (listener != null) {
+                int position = getAdapterPosition();
+                if (position != RecyclerView.NO_POSITION) {
+                    listener.onItemClick(itemView, position); // Pass itemView
                 }
             }
         });

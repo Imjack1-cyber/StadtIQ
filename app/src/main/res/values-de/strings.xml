@@ -39,7 +39,6 @@
     <string name="learn_more">Mehr erfahren...</string>
     <string name="dialog_close">Schließen</string>
     <string name="impressum_placeholder_content_description">Platzhalterbild für den Inhalt der Impressumsseite</string>
-    <string name="impressum_description">Projektname: StadtIQ\n\nEntwickelt als Demonstrationsanwendung für die Visualisierung von Umweltdaten in städtischen Stadtteilen.\n\nHaftungsausschluss:\nDiese Anwendung dient ausschließlich zu Informationszwecken. Die dargestellten Daten basieren auf Platzhalterwerten und Simulationen. Für reale Sensordaten, Berechnungen und Visualisierungen wären eine tatsächliche Sensorinfrastruktur, Datenpipelines und ausgefeilte Analysetechniken erforderlich. Die Richtigkeit und Vollständigkeit der bereitgestellten Informationen kann nicht garantiert werden.Die Nutzung dieser App erfolgt auf eigene Gefahr.\n\nRechtliche Hinweise:\n[Ersetzen Sie diese Angaben durch die tatsächlichen rechtlichen Hinweise, falls diese App veröffentlicht werden sollte]\n\nKontakt:\nStadtIQ\n[Ihre Kontaktdaten – help@stadtiq.com, stadtiq.com, 0531543683290]\n\n\n© 2025 StadtIQ. Alle Rechte vorbehalten.</string>
 
     <!-- Value Detail Strings / Popup Explanations -->
     <string name="detail_title_format">%s Detailinformationen</string>
@@ -73,5 +72,81 @@
     <string name="dialog_select_language_title">Sprache auswählen</string>
     <string name="language_english">Englisch</string>
     <string name="language_german">Deutsch</string>
+
+    <string name="impressum_description">
+        <b>Projektname:</b> StadtIQ
+        \n\n
+        <b>Entwickelt als:</b>
+        \n Eine Demonstrationsanwendung zur Visualisierung von Umweltdaten in städtischen Gebieten.
+        \n\n
+        <b>Haftungsausschluss:</b>
+        \n
+        Diese Anwendung dient ausschließlich zu Informations- und Demonstrationszwecken. Die dargestellten Daten basieren auf Platzhalterwerten und Simulationen, nicht auf Echtzeit-Sensormessungen.
+        \n\n
+        Die Erfassung von realen Sensordaten, präzise Berechnungen und fortgeschrittene Visualisierungen würden eine tatsächliche Sensorinfrastruktur, robuste Datenpipelines und hochentwickelte Analysetechniken erfordern. Die Richtigkeit, Vollständigkeit oder Aktualität der hier bereitgestellten Informationen wird nicht garantiert.
+        \n\n
+        Die Nutzung dieser Anwendung und das Vertrauen auf deren Inhalte erfolgen ausschließlich auf eigenes Risiko. Die Entwickler übernehmen keine Haftung für Entscheidungen oder Maßnahmen, die auf Grundlage der in dieser App dargestellten Informationen getroffen werden.
+        \n\n
+        <b>Rechtliche Hinweise:</b>
+        \n
+        StadtIQ GmBH
+        \n
+        Beethovenstraße 57
+        \n
+        38106 Braunschweig, Deutschland
+        \n\n
+        <b>Kontakt:</b>
+        \n
+        StadtIQ Projektteam
+        \n
+        E-Mail: help@stadtiq.com
+        \n
+        Webseite: stadtiq.com
+        \n
+        Telefon: +49 176 87855071
+        \n\n
+        <b>EU-Streitschlichtung:</b>
+        \n
+        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+        \n
+        https://ec.europa.eu/consumers/odr/.
+        \n
+        Unsere E-Mail-Adresse finden Sie oben im Impressum.
+        \n\n
+        <b>Verbraucherstreitbeilegung:</b>
+        \n
+        Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+        \n\n
+        <b>Zentrale Kontaktstelle nach dem Digital Services Act - DSA
+(Verordnung (EU) 2022/265):</b>
+        \n
+        Unsere zentrale Kontaktstelle für Nutzer und Behörden nach Art. 11, 12 DSA erreichen Sie wie folgt:
+        \n
+        \n
+        E-Mail: legal@stadtiq.com
+        \n
+        Telefon: +49 (0) 178 2372975
+        \n
+        Die für den Kontakt zur Verfügung stehenden Sprachen sind: Deutsch und Englisch.
+        \n\n
+        <b>© 2025 StadtIQ. Alle Rechte vorbehalten.</b>
+    </string>
+
+    <string name="menu_language_option">Sprache</string>
+    <string name="dialog_cancel">Abbrechen</string>
+    <string name="placeholder_select_city_for_list">Bitte Stadt auswählen, um die Liste anzuzeigen.</string>
+    <string name="placeholder_select_value">Bitte einen Wert auswählen.</string>
+    <string name="placeholder_select_time">Bitte einen Zeitraum auswählen.</string>
+    <string name="placeholder_select_value_and_time">Bitte Wert und Zeitraum auswählen.</string>
+    <string name="green_dots_color_name">Grün für Punkte</string> <!-- Für StaticMapView -->
+    <string name="toggle_list_layout_description">Listenlayout zwischen einer und zwei Spalten umschalten</string>
+
+    <string name="label_time_period_months">Zeitraum (Monate):</string>
+    <string name="label_select_value_for_graph">Wert(e) für Graph auswählen:</string>
+    <string name="txt_graph_placeholder_message_verlauf_default">Bitte Stadt, Zeitraum und Wert(e) auswählen, um den Graphen anzuzeigen.</string>
+    <string name="placeholder_select_time_and_value">Bitte einen Zeitraum und mindestens einen Wert auswählen.</string>
+    <string name="placeholder_select_at_least_one_value">Bitte mindestens einen Wert auswählen, um ihn im Graphen anzuzeigen.</string>
+
+
 
 </resources>

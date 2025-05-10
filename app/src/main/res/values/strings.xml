@@ -40,7 +40,6 @@
     <string name="learn_more">Learn More...</string>
     <string name="dialog_close">Close</string>
     <string name="impressum_placeholder_content_description">Placeholder image for Impressum page content</string>
-    <string name="impressum_description">Project Name: StadtIQ\n\nDeveloped as a demonstration application for environmental data visualization in urban areas.\n\nDisclaimer:\nThis application is for informational purposes only. The data presented is based on placeholder values and simulations. Real-world sensor data, calculations, and visualizations would require actual sensor infrastructure, data pipelines, and sophisticated analysis techniques. The accuracy and completeness of the information provided are not guaranteed. Use of this app is at your own risk.\n\nLegal Information:\n[Replace with actual legal information if this app were to be published]\n\nContact:\nStadtIQ\n[Your Contact Information - help@stadtiq.com, stadtiq.com, 0531543683290]\n\n\n© 2025 StadtIQ. All rights reserved.</string>
 
     <!-- Value Detail Strings / Popup Explanations -->
     <string name="detail_title_format">%s Detail Information</string>
@@ -74,5 +73,88 @@
     <string name="dialog_select_language_title">Select Language</string>
     <string name="language_english">English</string>
     <string name="language_german">German</string>
+
+
+    <string name="impressum_description">
+
+<b>Project name:</b> StadtIQ
+\n\n
+<b>Developed as:</b>
+        \n
+        A demonstration application for visualising environmental data in urban areas.
+\n\n
+<b>Disclaimer:</b>
+\n
+
+
+This app is for informational and demonstration purposes only. The data presented is based on placeholder values and simulations, not real-time sensor measurements.
+\n\n
+The collection of real sensor data, accurate calculations and advanced visualisations would require an actual sensor infrastructure, robust data pipelines and sophisticated analysis techniques.
+
+The accuracy, completeness or timeliness of the information provided here is not guaranteed.
+\n\n
+The use of this application and reliance on its contents is entirely at your own risk. The developers accept no liability for decisions or actions taken based on the information presented in this app.
+\n\n
+<b>Legal information:</b>
+\n
+
+StadtIQ GmBH
+\n
+Beethovenstraße 57
+\n
+38106 Braunschweig, Germany
+\n\n
+<b>Contact:</b>
+\n
+StadtIQ Project Team
+\n
+Email: help@stadtiq.com
+\n
+Website: stadtiq.com
+\n
+        Phone: +49 176 87855071
+\n\n
+<b>EU dispute resolution:</b>
+\n
+The European Commission provides a platform for online dispute resolution (ODR):
+\n
+https://ec.europa.eu/consumers/odr/.
+\n
+        You can find our email address in the legal notice above.
+\n\n
+<b>Consumer dispute resolution:</b>
+\n
+We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.
+\n\n
+<b>Central contact point under the Digital Services Act - DSA
+(Regulation (EU) 2022/265):</b>
+        \n
+Our central contact point for users and authorities pursuant to Articles 11 and 12 of the DSA can be reached as follows:
+\n
+\n
+Email: legal@stadtiq.com
+\n
+Telephone: +49 (0) 178 2372975
+        \n
+The languages available for contact are: German and English.
+\n\n
+<b>© 2025 StadtIQ. All rights reserved.</b>
+    </string>
+
+    <!-- ... (other value explanations, etc.) ... -->
+    <string name="menu_language_option">Language</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="placeholder_select_city_for_list">Please select a city to view the list.</string>
+    <string name="placeholder_select_value">Please select a value.</string>
+    <string name="placeholder_select_time">Please select a time period.</string>
+    <string name="placeholder_select_value_and_time">Please select a value and time period.</string>
+    <string name="green_dots_color_name">Green for Dots</string> <!-- For StaticMapView -->
+    <string name="toggle_list_layout_description">Toggle list layout between one and two columns</string>
+
+    <string name="label_time_period_months">Time Period (Months):</string>
+    <string name="label_select_value_for_graph">Select Value(s) for Graph:</string>
+    <string name="txt_graph_placeholder_message_verlauf_default">Please select city, time period, and value(s) to display graph.</string>
+    <string name="placeholder_select_time_and_value">Please select a time period and at least one value.</string>
+    <string name="placeholder_select_at_least_one_value">Please select at least one value to display on the graph.</string>
 
 </resources>

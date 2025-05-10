@@ -1,39 +1,58 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
     <!-- Base application theme. -->
     <style name="Theme.stadtiq" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Customize your theme here. -->
+        <!-- Primary brand colors (Light Theme Defaults) -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
         <item name="colorOnPrimary">@color/colorOnPrimary</item>
-        <!-- Add secondary colors if needed -->
+
+        <!-- Secondary brand colors (Light Theme Defaults) -->
         <item name="colorSecondary">@color/colorSecondary</item>
         <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
         <item name="colorOnSecondary">@color/colorOnSecondary</item>
 
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Status bar color (uses colorPrimaryVariant by default) -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <!-- General background and surface colors (Light Theme Defaults) -->
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorError">@color/colorError</item>
+
+        <!-- Text colors that appear ON the above backgrounds/surfaces (Light Theme Defaults) -->
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+        <item name="colorOnError">@color/colorOnError</item>
+
+        <!-- Default text appearances (Light Theme Defaults) -->
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:textColorHint">@color/textColorHint</item>
+
+        <!-- Outline color for components like cards, text fields (MDC 1.5.0+) -->
+        <!-- Define "colorOutline" in your colors.xml and values-night/colors.xml -->
+        <item name="colorOutline">@color/colorOutline</item>
+
+        <!-- Custom attributes for graph colors -->
+        <item name="graphAxisColor">@color/graph_axis</item>
+        <item name="graphGridColor">@color/graph_grid</item>
+        <item name="graphTextColor">@color/graph_text</item>
     </style>
 
-    <!-- Theme for activities that use the Toolbar added in layout (disables default ActionBar) -->
     <style name="Theme.stadtiq.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
-    <!-- Overlay themes for Toolbar popups if needed -->
-    <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
-        <!-- Colors specific to the dark overlay -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorOnPrimary">@color/colorOnPrimary</item>
-        <!-- Add other colors as needed -->
-    </style>
-    <style name="ThemeOverlay.AppCompat.Light" parent="ThemeOverlay.AppCompat.ActionBar">
-        <!-- Colors specific to the light overlay (e.g., for popup menus) -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+    <style name="ThemeOverlay.App.DarkActionBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/colorOnPrimary</item>
+        <item name="android:textColorSecondary">#B3FFFFFF</item>
+        <item name="colorControlNormal">@color/colorOnPrimary</item>
     </style>
 
+    <style name="ThemeOverlay.App.LightPopupMenu" parent="ThemeOverlay.AppCompat.Light"/>
 
-    <!-- Style for the horizontally scrollable value/time options -->
     <style name="ValueOptionStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -46,7 +65,7 @@
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
-        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColor">@color/default_text_color_selector_verlauf</item>
     </style>
 
 </resources>

@@ -1,4 +1,4 @@
-package com.stadtiq; // <<< CHANGE THIS >>>
+package com.stadtiq;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,24 +33,27 @@ public class ValueAdapter extends RecyclerView.Adapter<ValueViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ValueViewHolder holder, int position) {
         ValueItem currentItem = valueList.get(position);
-        holder.valueName.setText(currentItem.name);
-        holder.valueReading.setText(currentItem.reading);
+        // Corrected lines:
+        if (currentItem != null) {
+            holder.valueName.setText(currentItem.getDisplayableName()); // Use getter
+            holder.valueReading.setText(currentItem.getReading());     // Use getter
+        }
     }
 
     @Override
     public int getItemCount() {
-        return valueList.size();
+        return valueList != null ? valueList.size() : 0; // Added null check for safety
     }
 
     public void updateData(List<ValueItem> newList) {
         this.valueList = newList;
-        notifyDataSetChanged();
+        notifyDataSetChanged(); // Consider using DiffUtil for better performance in complex lists
     }
 
     public ValueItem getValueItem(int position) {
         if (valueList != null && position >= 0 && position < valueList.size()) {
             return valueList.get(position);
         }
-        return null; // Or throw an exception, depending on desired behavior
+        return null;
     }
 }

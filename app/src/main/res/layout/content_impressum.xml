@@ -20,11 +20,12 @@
         <ImageView
             android:id="@+id/logo_stadtiq_mit"
             android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:src="@drawable/logo_stadtiq_mit"
-        android:layout_marginBottom="24dp"/>
+            android:layout_height="100dp"
+            android:src="@drawable/logo_stadtiq_mit"
+            android:layout_marginBottom="24dp"/>
 
-        <!-- Placeholder Text Content -->
+        <!-- Removed redundant title TextView, as Toolbar now handles it -->
+        <!--
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -32,12 +33,15 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:text="@string/title_activity_impressum"
             android:layout_marginBottom="16dp"/>
+        -->
 
+        <!-- Placeholder Text Content -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:text="@string/impressum_description"
+            android:textColor="?android:attr/textColorSecondary"
             android:gravity="center_horizontal"/>
 
     </LinearLayout>

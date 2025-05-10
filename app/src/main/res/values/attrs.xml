@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="graphAxisColor" format="color" />
+    <attr name="graphGridColor" format="color" />
+    <attr name="graphTextColor" format="color" />
+
+    <!-- You can also add the myTextColorPrimary etc. here if you intend to use them via ?attr/ -->
+    <!--
+    <attr name="myTextColorPrimary" format="color" />
+    <attr name="myTextColorSecondary" format="color" />
+    <attr name="myBackgroundColor" format="color" />
+    <attr name="mySurfaceColor" format="color" />
+    -->
+</resources>
