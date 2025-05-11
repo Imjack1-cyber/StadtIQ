@@ -31,8 +31,8 @@
     <string name="label_time_period">Time Period:</string>
     <string name="time_option_months">Months</string>
     <string name="time_option_all">Everything</string>
-    <string name="placeholder_select_time_value">Please select a time period and a value above.</string>
-    <string name="placeholder_select_city_verlauf">Please select a city above to view history data.</string>
+    <string name="placeholder_select_time_value">Please select a time period and a value.</string>
+    <string name="placeholder_select_city_verlauf">Please select a city.</string>
 
 
     <!-- Pop-up Strings -->
@@ -156,5 +156,19 @@ The languages available for contact are: German and English.
     <string name="txt_graph_placeholder_message_verlauf_default">Please select city, time period, and value(s) to display graph.</string>
     <string name="placeholder_select_time_and_value">Please select a time period and at least one value.</string>
     <string name="placeholder_select_at_least_one_value">Please select at least one value to display on the graph.</string>
+    <string name="graph_x_axis_label_time">Time</string>
+    <string name="graph_y_axis_label_time">Normalized Value (%)</string>
+
+    <string name="menu_export_graph">Export Graph</string>
+    <string name="graph_export_success">Graph saved to Pictures</string>
+    <string name="graph_export_failed">Failed to save graph</string>
+    <string name="permission_needed_for_storage">Storage permission is needed to save the graph.</string>
+
+    <string name="dialog_title_export_options">Export Options</string>
+    <string name="export_format_png">PNG (High Quality, Larger File)</string>
+    <string name="export_format_jpeg">JPEG (Adjustable Quality, Smaller File)</string>
+    <string name="jpeg_quality_label">JPEG Quality (1-100):</string>
+    <string name="include_legend_label">Include Legend</string>
+    <string name="export_button">Export</string>
 
 </resources>

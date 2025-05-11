@@ -4,45 +4,41 @@
     android:id="@+id/speech_bubble_view_root"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    tools:background="#ABCDEF">
+    tools:background="#E0E0E0"> <!-- Neutral tools:background for IDE preview -->
 
     <LinearLayout
         android:id="@+id/bubble_content_area"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:minWidth="240dp"
-        android:background="#80FFEB3B"
-    android:padding="2dp">
+        android:minWidth="250dp">  <!-- Ensures minimum width for content -->
 
-    <TextView
-        android:id="@+id/text_explanation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        android:textColor="?android:attr/textColorPrimary"
-        android:background="#80F44336"
-    android:padding="2dp"
-    android:maxLines="10"
-    android:ellipsize="none"
-    tools:text="CO₂ is a key greenhouse gas from fossil fuels, impacting climate change. This is a longer line to test wrapping and full visibility." />
+        <TextView
+            android:id="@+id/text_explanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="?android:attr/textColorPrimary"
+            tools:text="This is a brief explanation about the value. It might be a bit longer to test wrapping and make sure the bubble expands nicely." />
 
-    <TextView
-        android:id="@+id/text_learn_more"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-    android:layout_marginTop="8dp"
-    android:text="@string/learn_more"
-    android:textAppearance="@style/TextAppearance.AppCompat.Small"
-    android:textColor="@android:color/holo_blue_dark"
-    android:background="#804CAF50"
-    android:paddingTop="4dp"
-    android:paddingBottom="8dp"
-    android:paddingStart="8dp"
-    android:paddingEnd="4dp"
-    android:clickable="true"
-    android:focusable="true"
-    tools:text="Learn More Test"/>
-</LinearLayout>
-    </com.stadtiq.SpeechBubbleView>
+        <TextView
+            android:id="@+id/text_learn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="44dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:text="@string/learn_more"
+            android:contentDescription="@string/learn_more"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="?attr/colorPrimary"
+            android:background="?attr/selectableItemBackground"
+            android:paddingTop="4dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:clickable="true"
+            android:focusable="true"/>
+    </LinearLayout>
+
+</com.stadtiq.SpeechBubbleView>

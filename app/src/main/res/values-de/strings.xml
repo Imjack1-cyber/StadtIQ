@@ -30,8 +30,8 @@
     <string name="label_time_period">Zeitraum:</string>
     <string name="time_option_months">Monate</string>
     <string name="time_option_all">Alles</string>
-    <string name="placeholder_select_time_value">Bitte wählen Sie oben einen Zeitraum und einen Wert aus.</string>
-    <string name="placeholder_select_city_verlauf">Bitte wählen Sie oben eine Stadt aus, um Verlaufsdaten anzuzeigen.</string>
+    <string name="placeholder_select_time_value">Bitte wählen Sie einen Zeitraum und einen Wert aus.</string>
+    <string name="placeholder_select_city_verlauf">Bitte wählen Sie eine Stadt aus.</string>
 
 
     <!-- Pop-up Strings -->
@@ -146,7 +146,19 @@
     <string name="txt_graph_placeholder_message_verlauf_default">Bitte Stadt, Zeitraum und Wert(e) auswählen, um den Graphen anzuzeigen.</string>
     <string name="placeholder_select_time_and_value">Bitte einen Zeitraum und mindestens einen Wert auswählen.</string>
     <string name="placeholder_select_at_least_one_value">Bitte mindestens einen Wert auswählen, um ihn im Graphen anzuzeigen.</string>
+    <string name="graph_x_axis_label_time">Zeit</string>
+    <string name="graph_y_axis_label_time">Normalisierte Werte (%)</string>
 
+    <string name="menu_export_graph">Graph exportieren</string>
+    <string name="graph_export_success">Graph in Bildern gespeichert</string>
+    <string name="graph_export_failed">Graph konnte nicht gespeichert werden</string>
+    <string name="permission_needed_for_storage">Speicherberechtigung wird zum Speichern des Graphen benötigt.</string>
 
+    <string name="dialog_title_export_options">Export Möglichkeiten</string>
+    <string name="export_format_png">PNG (Höhere Qualität, krößere Datei)</string>
+    <string name="export_format_jpeg">JPEG (Anpassbare Qualität, kleinere Datei)</string>
+    <string name="jpeg_quality_label">JPEG Qualität (1-100):</string>
+    <string name="include_legend_label">Legende Inkludieren</string>
+    <string name="export_button">Export</string>
 
 </resources>

@@ -6,4 +6,11 @@
         android:title="@string/menu_language_option"
         android:icon="@drawable/ic_menu_language"
         app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_export_graph"
+        android:title="@string/menu_export_graph"
+        android:icon="@drawable/ic_menu_export"
+        app:showAsAction="ifRoom"
+        android:visible="false" /> <!-- MODIFIED: Set to false by default -->
 </menu>

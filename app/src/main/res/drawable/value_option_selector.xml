@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selected state is handled by direct color setting in code, -->
+    <!-- but we can define a visual for IDE or other uses. -->
     <item android:state_selected="true">
         <shape android:shape="rectangle">
-            <solid android:color="#D3D3D3"/> <!-- Grey color -->
-            <corners android:radius="4dp"/>
-            <stroke android:width="1dp" android:color="#B0B0B0"/>
+            <solid android:color="?attr/colorPrimary" />
+            <corners android:radius="4dp" />
         </shape>
     </item>
+
+    <!-- Focused state (you might want this for accessibility) -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/colorSurfaceContainerHighest" /> <!-- A slightly elevated surface -->
+            <stroke android:width="1dp" android:color="?attr/colorPrimary" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+
+    <!-- Default/Unselected state -->
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="@android:color/white"/> <!-- White color -->
-            <corners android:radius="4dp"/>
-            <stroke android:width="1dp" android:color="#B0B0B0"/>
+            <!-- Use a subtle surface color for unselected items -->
+            <!-- colorSurfaceContainer is a good choice for a slightly off-background color -->
+            <solid android:color="?attr/colorSurfaceContainer" />
+            <stroke android:width="1dp" android:color="?attr/colorOutline" />
+            <corners android:radius="4dp" />
         </shape>
     </item>
 </selector>

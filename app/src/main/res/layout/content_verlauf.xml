@@ -90,13 +90,13 @@
             <TextView
                 android:id="@+id/txt_graph_placeholder_message_verlauf"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txt_graph_placeholder_message_verlauf_default"
-                android:layout_gravity="center"
-                android:textColor="?android:attr/textColorSecondary"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:gravity="center"
-                android:visibility="visible"/>
+            android:layout_height="wrap_content"
+            android:text="@string/txt_graph_placeholder_message_verlauf_default"
+            android:layout_gravity="center"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:gravity="center"
+            android:visibility="visible"/>
             <!-- SimpleGraphView will be added here by Java code -->
         </FrameLayout>
 
